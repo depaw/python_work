@@ -1,0 +1,16 @@
+export PATH="/Users/hailin/anaconda3/bin:$PATH"
+
+# 将anaconda的bin目录加入PATH，根据版本不同，也可能是~/anaconda3/bin
+echo 'export PATH="~/anaconda2/bin:$PATH"' >> ~/.bashrc
+# 更新bashrc以立即生效
+source ~/.bashrc
+
+echo 'export PATH="/Users/hailin/anaconda3/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+读取utf-8文本文件：
+#!/usr/bin/python3
+# -*- coding:utf8 -*-
+import codecs
+然后指定解码方式:
+open("filename",'w',encoding="utf8")
